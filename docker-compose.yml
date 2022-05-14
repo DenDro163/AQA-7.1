@@ -1,0 +1,14 @@
+#Версия Docker API
+ version: '3.8'
+#Сервисы для запуска
+ services:
+  #Первый сервис db
+  bd:
+      image: postgres:13.3-alpine
+      ports:
+        - '5432:5432'
+
+      environment:
+        - POSTGRES_DB=appDb
+        - POSTGRES_USER=adminLogin
+        - POSTGRES_PASSWORD=9mREsvXDs9Gk89Ef
